@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.translations.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_familyMembersActivity"
+            app:destination="@id/familyMembersActivity" />
+        <action
+            android:id="@+id/action_startFragment_to_numbersFragment2"
+            app:destination="@id/numbersFragment2" />
+        <action
+            android:id="@+id/action_startFragment_to_colorsActivity3"
+            app:destination="@id/colorsActivity3" />
+        <action
+            android:id="@+id/action_startFragment_to_phrasesActivity"
+            app:destination="@id/phrasesActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/familyMembersActivity"
+        android:name="com.example.translations.FamilyMembersActivity"
+        android:label="FamilyMembersActivity" />
+    <fragment
+        android:id="@+id/numbersFragment2"
+        android:name="com.example.translations.NumbersFragment"
+        android:label="NumbersFragment" />
+    <activity
+        android:id="@+id/colorsActivity3"
+        android:name="com.example.translations.ColorsActivity"
+        android:label="ColorsActivity" />
+    <activity
+        android:id="@+id/phrasesActivity"
+        android:name="com.example.translations.PhrasesActivity"
+        android:label="PhrasesActivity" />
+</navigation>
